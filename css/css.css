@@ -54,12 +54,20 @@ span { display: inline-block; }
 .home > .container > .autoPlayImg > .selectWhichOne > .selectWhichOneShow { border-color: gray; background-color: white; }
 .home > .container > .autoPlayImg > li { display: block; position: absolute; cursor: pointer; opacity: 0; transition: all 0.5s; }
 .home > .container > .autoPlayImg > li.show { opacity: 1; }
-.home > .container > .rightMenu { width: 234px; height: 460px; position: absolute; z-index: 20; top: 0px; background-color: rgba(0, 0, 0, 0.6); }
-.home > .container > .rightMenu > li { cursor: pointer; color: white; position: relative; line-height: 43px; }
+.home > .container > .rightMenu { width: 234px; height: 460px; position: absolute; z-index: 30; top: 0px; background-color: rgba(0, 0, 0, 0.6); }
+.home > .container > .rightMenu > li { cursor: pointer; color: white; line-height: 43px; position: static; }
 .home > .container > .rightMenu > li:hover { background-color: coral; }
 .home > .container > .rightMenu > li:nth-of-type(1) { margin-top: 15px; }
 .home > .container > .rightMenu > li:nth-last-of-type(1) { margin-bottom: 15px; }
 .home > .container > .rightMenu > li > span { margin-left: 30px; }
+.home > .container > .rightMenu > li > .rightMenu-content { display: none; position: absolute; top: 0px; left: 234px; border-right: 1px solid gainsboro; transition: all 0.3s; }
+.home > .container > .rightMenu > li > .rightMenu-content:hover { box-shadow: 2px 15px 30px rgba(0, 0, 0, 0.1); }
+.home > .container > .rightMenu > li > .rightMenu-content > ul { float: left; background-color: white; height: 458px; width: 248px; border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro; }
+.home > .container > .rightMenu > li > .rightMenu-content > ul > li { display: flex; align-items: center; padding-top: 18px; padding-bottom: 18px; padding-left: 30px; color: rgba(0, 0, 0, 0.8); }
+.home > .container > .rightMenu > li > .rightMenu-content > ul > li > img { height: 40px; height: 40px; }
+.home > .container > .rightMenu > li > .rightMenu-content > ul > li > p { margin-left: 10px; }
+.home > .container > .rightMenu > li > .rightMenu-content > ul > li:hover { color: coral; }
+.home > .container > .rightMenu > li > .rightMenu-content-show { display: block; }
 .home > .container > .home-sub { margin-top: 14px; width: 100%; height: 170px; }
 .home > .container > .home-sub > .shortcut { display: block; float: left; position: relative; width: 234px; height: 100%; background-color: #5f5750; }
 .home > .container > .home-sub > .shortcut li { cursor: pointer; margin-top: 3px; margin-left: 2px; float: left; width: 75px; height: 80px; text-align: center; color: rgba(255, 255, 255, 0.7); }
